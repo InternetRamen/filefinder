@@ -38,10 +38,11 @@ readline.question("What's the output folder called?", (output) => {
                         );
                     }
                 }
+                setTimeout(function () {
+                    readline.close();
+                }, 5000);
             });
-            setTimeout(function () {
-                readline.close();
-            }, 5000);
+            
         });
     }
 });
